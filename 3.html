@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        Bài 3 : viết trương trình nhập vào đoạn text, 
+        In ra text mới với chữ cái đầu phải viết hoa.
+        Input : "co gang học lap trinh"
+        Output : Co Gang Hoc Lap Trinh
+
+        */
+         let str=prompt("nhập");
+         var array1 =str.split(' ');
+         var newarray1 = [];
+    
+         for(var x = 0; x < array1.length; x++)
+         {   
+                newarray1[x]=(array1[x].charAt(0).toUpperCase()+array1[x].slice(1).toLowerCase()+' ');
+         }
+
+         console.log(newarray1.join(''))
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        bài 1 : cho một mảng có sẵn.
+        tìm phần tử xuất hiện nhiều nhất trong mảng và in ra chúng.
+        Iput : [1,3,3,5,7,7,8,3]
+        output : 3 xuất hiện nhiều nhất 3 lần
+    -->
+    <script>
+        let string=prompt("mời bạn nhập");
+        let array1=string.split("");
+        let mf=1;
+        let m=0;
+        let item;
+
+        // console.log("11:",array1)
+        for (let i = 0; i < array1.length; i++) 
+        {
+            for (let j = i; j < array1.length; j++) 
+            {
+                if(array1[i]==array1[j])
+                m++;
+                // console.log("2222", array1)
+                if(mf<m){
+                    mf=m;
+                    item=array1[i];
+                };
+                
+
+
+
+                
+                
+            }
+            m=0;
+        }
+        for (let i = 0; i < array1.length; i++) 
+        {
+            for (let j = i; j < array1.length; j++) 
+            {
+                if(array1[i]==array1[j])
+                m++;
+                // console.log("2222", array1)
+                if(mf==m){
+                    console.log(array1[i])
+
+                };
+                
+
+
+
+                
+                
+            }
+            m=0;
+        }
+        //  console.log( item ,"xuất hiện nhiều nhất",mf,"lần");
+        
+
+    </script>
+</body>
+</html>
